@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style> 
+      body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(130,150,200); background-image: url(https://external-preview.redd.it/solo-leveling-season-2-episode-4-preview-images-v0-PFrHJCIKtFV2fu5mYrTD0O-x5X9YEmH6XYvbSPA56ZM.jpg?width=1080&crop=smart&auto=webp&s=820d7710050f922ef3773d4e0c376037001903c1); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+  color: white;
+  font-family: Tahoma;
+  font-size: 16px; padding: 20px; text-shadow: 1px 1px 0.05px black, 0 0 1em black, 0 0 1em black, 0 0 1em black, 0 0 1em black, 0 0 1em black, 0 0 1em black
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em; 
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid violet;}
+
+fieldset:last-of-type {border-bottom: none}
+
+p {text-decoration: underline}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: violet;
+  border-color: white;
+  min-width: 300px;
+}
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We appreciate your participation! Please take this survey to help with future improvement.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name">First and last name <label id="name-label">(Input your full name):</label><input type="text" id="name" placeholder="Victor Nnadi" required / ></label> 
+        <label for="email">Email <label id="email-label">(Input your email address):</label><input type="email" id="email" placeholder="victornnadi101@outlook.com" required /></label>
+        <label for="number">Age <label id="number-label">(Input your age (years)):</label><input type="number" id="number" min="13" max="100" placeholder="25" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="genre-preference">Which is your preferred Anime genre?</label>
+        <select id="dropdown" name="genre-preference">
+          <option value="">(select one)</option>
+          <option value="1">Fantasy</option>
+          <option value="2">Action</option>
+          <option value="3">Romance</option>
+          <option value="4">Sports</option>
+          <option value="5">Sci-fi</option>
+        </select>
+        <label>What is your preffered language setup?</label>
+        <label  for="subtitled"><input type="radio" id="subtitled" value="1" name="language-option" checked /> Subtitled (SUB)</label>
+        <label for="dubbed"><input type="radio" value="2" id="dubbed" name="language-option" /> Dubbed (DUB)</label>       
+      </fieldset>
+      <fieldset>
+        <label>Choose your current most anticipated Anime (Choose all that apply): </label>
+        <label for="solo-leveling"><input type="checkbox" id="solo-leveling" value="1" /> Solo Leveling</label>
+        <label for="one-punch-man"><input type="checkbox" id="one-punch-man" value="2" /> One Punch Man</label>
+        <label for="demon-slayer"><input type="checkbox" id="demon-slayer" value="3" /> Demon Slayer</label>
+        <label for="dan-dan-dan"><input type="checkbox" id="dan-an-dan" value="4" /> Dan Dan Dan</label>
+        <label for="blue-lock"><input type="checkbox" id="blue-lock" value="5" /> Blue Lock</label>
+        <label for="wind-breaker"><input type="checkbox" id="wind-breaker" value="6" /> Wind Breaker</label>
+        <label for="one-piece"><input type="checkbox" id="one-piece" value="7" /> One piece</label>
+        <label for="dr-stone"><input type="checkbox" id="dr-stone" value="8" /> Dr. Stone</label>
+        <label for="re-zero"><input type="checkbox" id="re-zero" value="9" /> Re:Zero</label>
+        <label for="kaiju-no-8"><input type="checkbox" id="kaiju-no-8" value="10" /> Kaiju No.8</label>
+        <label for="chainsaw-man"><input type="checkbox" id="chainsaw-man" value="11" /> Chainsaw Man</label>
+        <label for="comment"> Additional comments: </label>
+        <label>
+        <textarea placeholder="Feel free to add any additional comments" id="comment" name="comment" rows="5" cols="50"></textarea>
+        </label>  
+        </textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>  
+  </body>
+</html>    
+
+
+
+
+
